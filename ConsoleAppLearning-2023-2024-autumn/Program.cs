@@ -1,27 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using ConsoleAppLearning_2023_2024_autumn;
 using System.ComponentModel;
 
-Console.WriteLine("I start learning functions and variables today.");
+var wiz1 = new Wizard();
+var wiz2 = new Wizard();
 
-int MultiplyTwoNumbers(int num1, int num2)
-{
-    return num1 * num2;
-}
+wiz1.name = "Gendalf";
+wiz1.age = 200;
+wiz1.health = 100;
+wiz1.energy = 500;
 
-Console.WriteLine(MultiplyTwoNumbers(5, 4));
-
-string SayHello()
-{
-    return "Hey hey!";
-}
-
-Console.WriteLine(SayHello());
-
-
-void SendEmail(string address)
-{
-    // Procedure for sending an email
-    Console.WriteLine($"E-mail to {address} is sent.");
-}
-
-SendEmail("customer@someemail.com");
+wiz2.name = "Dubledorf";
+wiz2.age = 105;
+wiz2.health = 100;
+wiz2.energy = 100;

@@ -8,17 +8,17 @@ namespace ConsoleAppLearning_2023_2024_autumn
 {
     internal class Wizard
     {
-        string name;
-        int age;
-        int energy;
-        int health;
+        public string name;
+        public int age;
+        public int energy;
+        public int health;
 
-        void Talk()
+        public void Talk()
         {
             Console.WriteLine($"{name} is talking");
         }
 
-        void Heal()
+        public void Heal()
         {
             Console.WriteLine($"{name} is healing.");
         }
