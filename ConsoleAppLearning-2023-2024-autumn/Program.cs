@@ -14,3 +14,9 @@ wiz2.name = "Dubledorf";
 wiz2.age = 105;
 wiz2.health = 100;
 wiz2.energy = 100;
+
+wiz1.Talk();
+wiz1.Heal();
+
+wiz2.Talk();
+wiz2.Heal();
