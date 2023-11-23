@@ -26,12 +26,14 @@ var drag1 = new Dragon
     energy = 100
 };
 
-
-wiz1.Talk();
-wiz1.Heal();
-
-wiz2.Talk();
-wiz2.Heal();
-
 drag1.Talk();
-drag1.Attack();
+drag1.Attack(wiz2);
+
+wiz2.Status();
+
+drag1.Attack(wiz2);
+drag1.Attack(wiz2);
+
+wiz1.Heal(wiz2);
+
+wiz2.Status();

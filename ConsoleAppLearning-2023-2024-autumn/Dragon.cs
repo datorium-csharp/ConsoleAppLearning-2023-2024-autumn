@@ -18,9 +18,14 @@ namespace ConsoleAppLearning_2023_2024_autumn
             Console.WriteLine($"{name} is talking");
         }
 
-        public void Attack()
+        public void Attack(Wizard wizard)
         {
-            Console.WriteLine($"{name} is attacking.");
+            Console.WriteLine($"{this.name} is attacking {wizard.name}.");
+            wizard.health -= 40;
+            if(wizard.health <= 0)
+            {
+                wizard.active = false;
+            }
         }
     }
 }
