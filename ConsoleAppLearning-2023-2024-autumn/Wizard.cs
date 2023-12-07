@@ -9,11 +9,21 @@ namespace ConsoleAppLearning_2023_2024_autumn
 {
     internal class Wizard
     {
-        public string name;
-        public int age;
-        public int energy;
-        public int health;
-        public bool active = true;
+        public string _name;
+        public int _age;
+        public int _energy;
+        public int _health;
+        public bool _active = true;
+
+        //CONSTRUCTOR
+        public Wizard(string name, int age)
+        {
+            _name = name;
+            _age = age;
+            _energy = 100;
+            _health = 100;
+            _active = true;
+        }
 
         public void Talk()
         {

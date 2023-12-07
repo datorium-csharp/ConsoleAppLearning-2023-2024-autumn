@@ -2,21 +2,10 @@
 using ConsoleAppLearning_2023_2024_autumn;
 using System.ComponentModel;
 
-var wiz1 = new Wizard
-{
-    name = "Gandalf",
-    age = 200,
-    health = 100,
-    energy = 500
-};
 
-var wiz2 = new Wizard
-{
-    name = "Dumbledore",
-    age = 105,
-    health = 100,
-    energy = 100
-};
+var wiz1 = new Wizard("Gandalf", 200);
+var wiz2 = new Wizard("Damledore", 105);
+
 
 var drag1 = new Dragon
 {
