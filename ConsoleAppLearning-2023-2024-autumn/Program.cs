@@ -5,15 +5,7 @@ using System.ComponentModel;
 
 var wiz1 = new Wizard("Gandalf", 200);
 var wiz2 = new Wizard("Damledore", 105);
-
-
-var drag1 = new Dragon
-{
-    name = "Smaug",
-    age = 5000,
-    health = 100,
-    energy = 100
-};
+var drag1 = new Dragon("Smaug", 5000);
 
 drag1.Talk();
 drag1.Attack(wiz2);

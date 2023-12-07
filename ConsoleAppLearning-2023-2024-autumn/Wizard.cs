@@ -16,7 +16,7 @@ namespace ConsoleAppLearning_2023_2024_autumn
         public bool _active = true;
 
         //CONSTRUCTOR
-        public Wizard(string name, int age)
+        public Wizard(string name, int age) 
         {
             _name = name;
             _age = age;
@@ -27,41 +27,41 @@ namespace ConsoleAppLearning_2023_2024_autumn
 
         public void Talk()
         {
-            if (this.active)
+            if (this._active)
             {
-                Console.WriteLine($"{name} is talking");
+                Console.WriteLine($"{_name} is talking");
             }
             else
             {
-                Console.WriteLine($"{name} is out of game :/");
+                Console.WriteLine($"{_name} is out of game :/");
             }            
         }
 
         public void Heal(Wizard wizard)
         {
-            if(this.energy < 100)
+            if(this._energy < 100)
             {
-                Console.WriteLine($"{this.name} cannot heal, low energy.");
+                Console.WriteLine($"{this._name} cannot heal, low energy.");
             }
             else
             {
-                Console.WriteLine($"{this.name} is healing {wizard.name}.");
-                wizard.health = 100;
-                wizard.active = true;
-                this.energy -= 100;
+                Console.WriteLine($"{this._name} is healing {wizard._name}.");
+                wizard._health = 100;
+                wizard._active = true;
+                this._energy -= 100;
             }            
         }
 
         public void Status()
         {
-            if (this.active)
+            if (this._active)
             {
-                var status = $"Name: {this.name}, Health: {this.health}, Energy: {this.energy}";
+                var status = $"Name: {this._name}, Health: {this._health}, Energy: {this._energy}";
                 Console.WriteLine(status);
             }
             else
             {
-                Console.WriteLine($"{name} is out of game :/");
+                Console.WriteLine($"{_name} is out of game :/");
             }            
         }
     }

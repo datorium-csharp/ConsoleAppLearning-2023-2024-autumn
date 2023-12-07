@@ -8,23 +8,32 @@ namespace ConsoleAppLearning_2023_2024_autumn
 {
     internal class Dragon
     {
-        public string name;
-        public int age;
-        public int energy;
-        public int health;
+        public string _name;
+        public int _age;
+        public int _energy;
+        public int _health;
+
+        //CONSTRUCTOR
+        public Dragon(string name, int age)
+        {
+            _name = name;
+            _age = age;
+            _energy = 100;
+            _health = 100;
+        }
 
         public void Talk()
         {
-            Console.WriteLine($"{name} is talking");
+            Console.WriteLine($"{_name} is talking");
         }
 
         public void Attack(Wizard wizard)
         {
-            Console.WriteLine($"{this.name} is attacking {wizard.name}.");
-            wizard.health -= 40;
-            if(wizard.health <= 0)
+            Console.WriteLine($"{this._name} is attacking {wizard._name}.");
+            wizard._health -= 40;
+            if(wizard._health <= 0)
             {
-                wizard.active = false;
+                wizard._active = false;
             }
         }
     }
